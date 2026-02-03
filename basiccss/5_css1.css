@@ -1,61 +1,94 @@
+/* Background + page spacing */
 body {
-    background-color: #b7e3ef;
-    font-family: "Times New Roman", serif;
+  background: #b7dbe6;
+  margin: 0;
+  padding: 12px;
+  font-family: "Times New Roman", Times, serif;
 }
 
+/* Big centered title */
 h1 {
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 64px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  margin: 0 0 10px 0;
 }
 
+/* Section headers */
 h2 {
-    font-size: 36px;
-    margin-top: 20px;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  margin: 18px 0 10px 0;
 }
 
+/* Common HTML Tags header */
+h3 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 16px 0 8px 0;
+}
+
+/* Paragraph base spacing */
+p {
+  margin: 10px 0;
+}
+
+/* The boxed 2nd paragraph */
 #paragraph2 {
-    width: 700px;
-    margin: 20px 0 20px 40px;
-    padding: 15px;
-    border: 5px solid darkgreen;
-    line-height: 1.7;
-    background-color: white;
+  width: 820px;
+  margin: 18px auto;
+  padding: 18px 22px;
+  border: 5px solid #2f5e1b;
+  background: #ffffff;
+  line-height: 2.0;
 }
 
+/* Dark blue paragraphs */
 .blue {
-    background-color: #001a66;
-    color: white;
-    padding: 10px;
+  background: #001a66;
+  color: #ffffff;
+  padding: 12px;
+  border: 3px solid #000000;
+  margin: 14px 0;
+  line-height: 1.5;
 }
 
+/* Ordered list with 2 digits */
 ol {
-    list-style-type: decimal-leading-zero;
+  list-style-type: decimal-leading-zero;
+  padding-left: 22px;
 }
 
+/* Default link color (list items) */
 a {
-    color: blue;
+  color: #0000ee;
 }
 
+/* W3Schools link is different (reddish) */
 a[href*="w3schools"] {
-    color: red;
+  color: #b22222;
 }
 
+/* Table styling */
 table {
-    border-collapse: collapse;
-    width: 600px;
-    margin-top: 10px;
+  border-collapse: collapse;
+  width: 950px;
+  margin-top: 10px;
 }
 
 th {
-    background-color: #d9d9d9;
+  background: #d9d9d9;
+  font-weight: 800;
 }
 
 td {
-    background-color: white;
+  background: #ffffff;
 }
 
+/* Borders for ALL cells */
 table, th, td {
-    border: 2px solid black;
-    padding: 8px;
+  border: 2px solid #000000;
+  padding: 8px;
 }

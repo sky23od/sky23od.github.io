@@ -1,8 +1,116 @@
-body{margin:0;font-family:Arial,Helvetica,sans-serif;}
-#jumpMenu{position:fixed;top:0;left:0;width:15%;height:100vh;background:#222;color:#fff;padding:20px;box-sizing:border-box;}
-main{margin-left:15%;padding-top:170px;}
-header{position:fixed;top:0;left:15%;width:85%;background:#444;color:#fff;text-align:center;padding:25px 0;box-sizing:border-box;}
-#container{display:flex;flex-wrap:wrap;justify-content:space-evenly;gap:40px;padding:20px;}
-article{width:300px;border:1px solid #ccc;padding:15px;box-sizing:border-box;background:#f4f4f4;}
-#thanks{position:fixed;bottom:0;right:0;background:lightblue;padding:15px 30px;font-size:28px;}
-footer{margin-top:60px;}
+:root{
+  --menuW: 15%;
+  --headerW: calc(100% - var(--menuW));
+}
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#jumpMenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--menuW);
+  height: 100vh;
+  overflow:auto;
+  background:#222;
+  color:#fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#jumpMenu h2{
+  margin-top: 0;
+}
+
+#jumpMenu a{
+  color:#fff;
+  text-decoration: none;
+}
+
+main{
+  margin-left: var(--menuW);
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: var(--menuW);
+  width: var(--headerW);
+  background:#444;
+  color:#fff;
+  text-align:center;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+header p{ margin:0; }
+
+header nav{
+  margin-top: 10px;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+header button{
+  border:0;
+  padding: 8px 14px;
+  background:#666;
+  color:#fff;
+  cursor:pointer;
+}
+
+h1{
+  margin-top: 155px;
+  text-align:center;
+}
+
+#container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+article{
+  width: 300px;
+  box-sizing:border-box;
+  border:1px solid #ccc;
+  background:#f5f5f5;
+  padding: 14px;
+  line-height:1.4;
+}
+
+#thanks{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background:#222;
+  color:#fff;
+  padding: 12px 18px;
+}
+
+footer{
+  margin-top: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+footer p span{ font-weight:bold; }
+footer a{ color: inherit; }
+
+@media (max-width: 900px){
+  :root{
+    --menuW: 25%;
+    --headerW: calc(100% - var(--menuW));
+  }
+  article{
+    width: min(300px, calc(100% - 40px));
+  }
+}

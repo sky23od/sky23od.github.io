@@ -1,0 +1,10 @@
+body{margin:0;font-family:Arial,Helvetica,sans-serif;}
+#jumpMenu{position:fixed;left:0;top:0;width:15%;height:100vh;background:#222;color:#fff;padding:20px;box-sizing:border-box;}
+#jumpMenu a{color:#fff;text-decoration:none;}
+main{margin-left:15%;}
+header{position:fixed;top:0;left:15%;width:85%;background:#444;color:#fff;text-align:center;padding:20px 0;box-sizing:border-box;}
+h1{margin-top:140px;text-align:center;}
+#container{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:20px;}
+article{width:300px;border:1px solid #ccc;padding:15px;box-sizing:border-box;background:#f4f4f4;}
+#thanks{position:fixed;bottom:0;right:0;background:#222;color:#fff;padding:10px 20px;}
+footer{margin-top:40px;padding:20px;}
